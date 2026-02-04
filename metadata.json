@@ -1,0 +1,7 @@
+{
+  "name": "GestureControl 3D",
+  "description": "An interactive spatial application that allows users to manipulate 3D models and images using hand gestures and AI insights.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
