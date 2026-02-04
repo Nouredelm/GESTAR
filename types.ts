@@ -4,10 +4,12 @@ export interface HandData {
   handedness: any[];
 }
 
-export interface SpatialTransform {
-  position: [number, number, number];
-  rotation: [number, number, number];
-  scale: number;
+export interface VoiceTransform {
+  scaleFactor: number;
+  rotationOffset: [number, number, number];
+  positionOffset: [number, number, number];
+  animation?: 'bounce' | 'spin' | 'none';
+  color?: string;
 }
 
 export interface UploadedFile {
@@ -19,5 +21,6 @@ export interface UploadedFile {
 export enum GestureType {
   PINCH = 'PINCH',
   OPEN_PALM = 'OPEN_PALM',
+  CLOSED_FIST = 'CLOSED_FIST',
   NONE = 'NONE'
 }
